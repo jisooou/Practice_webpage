@@ -49,3 +49,6 @@ function greetings() {
 //함수 호출
 greetings();
 
+//Parameter(매개변수)
+function 함수이름(parameter){ 
+};
