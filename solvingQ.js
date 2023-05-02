@@ -10,6 +10,7 @@ console.log(espresso + milk); // 라떼 칼로리
 console.log(espresso + chocolateSyrup + milk); // 모카 칼로리
 console.log(espresso + chocolateSyrup + milk + whippedCream); // 모카(휘핑 추가) 칼로리
 
+
 /*애국가*/
 
 function printChorus() {
@@ -36,3 +37,25 @@ console.log('4절');
 console.log('이 기상과 이 맘으로 충성을 다하여');
 console.log('괴로우나 즐거우나 나라 사랑하세');
 printChorus();
+
+
+/*파라미터(parameter) 활용 예시*/
+
+function welcome(name) {
+  console.log('안녕하세요 ' + name + '님!');
+};
+
+welcome('코딩');
+
+
+/*숫자의 거듭제곱 출력*/
+
+function printSquare(x) {
+  console.log(x * x);
+}
+
+printSquare(2);
+printSquare(5);
+printSquare(6);
+
+
