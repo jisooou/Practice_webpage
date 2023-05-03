@@ -1,5 +1,4 @@
 /*칼로리 계산기*/
-
 let espresso = 10;
 let milk = 170;
 let chocolateSyrup = 50;
@@ -12,7 +11,6 @@ console.log(espresso + chocolateSyrup + milk + whippedCream); // 모카(휘핑 �
 
 
 /*애국가*/
-
 function printChorus() {
   console.log('무궁화 삼천리 화려 강산');
   console.log('대한 사람 대한으로 길이 보전하세');
@@ -40,7 +38,6 @@ printChorus();
 
 
 /*파라미터(parameter) 활용 예시*/
-
 function welcome(name) {
   console.log('안녕하세요 ' + name + '님!');
 };
@@ -49,7 +46,6 @@ welcome('코딩');
 
 
 /*숫자의 거듭제곱 출력*/
-
 function printSquare(x) {
   console.log(x * x);
 }
@@ -58,4 +54,19 @@ printSquare(2);
 printSquare(5);
 printSquare(6);
 
+
+/*내 노트북 용량은?*/
+function teraToGiga() {
+  console.log(teraToGiga + '는')
+  console.log(teraToGiga * 2 + 'GB 입니다.')
+};
+
+function teraToMega() {
+  console.log(teraToMega + '는')
+  console.log(teraToMega )
+};
+// TB -> GB 테스트
+teraToGiga(2);
+// TB -> MB 테스트
+teraToMega(2);
 
