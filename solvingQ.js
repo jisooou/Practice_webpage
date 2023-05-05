@@ -82,3 +82,13 @@ function introduce(name, birth, nationality, job) {
 };
 
 introduce('강아지', '20.05.06', '한국', '프로그래머');
+
+
+// 나의 체질량지수는?
+function bmiCalculator(name, weight, height) {
+  console.log(name + '님의 체질량지수는 ' + weight/(height*height/10000) + '입니다.');
+}
+
+bmiCalculator('홀쭉이', 43.52, 160);
+bmiCalculator('코린이', 61.25, 175);
+bmiCalculator('통통이', 77.76, 180);
