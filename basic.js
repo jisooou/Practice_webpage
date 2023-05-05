@@ -52,3 +52,10 @@ greetings();
 //Parameter(매개변수)
 function 함수이름(parameter){ 
 };
+
+//여러 개의 파라미터
+function printSum(num1, num2) {
+  console.log(num1 + num2);
+};
+printSum(10,5);
+printSum(56, 7890)
