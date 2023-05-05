@@ -84,7 +84,7 @@ function introduce(name, birth, nationality, job) {
 introduce('강아지', '20.05.06', '한국', '프로그래머');
 
 
-// 나의 체질량지수는?
+/*나의 체질량지수는?*/
 function bmiCalculator(name, weight, height) {
   console.log(name + '님의 체질량지수는 ' + weight/(height*height/10000) + '입니다.');
 }
@@ -92,3 +92,20 @@ function bmiCalculator(name, weight, height) {
 bmiCalculator('홀쭉이', 43.52, 160);
 bmiCalculator('코린이', 61.25, 175);
 bmiCalculator('통통이', 77.76, 180);
+
+
+/*1년 뒤엔 얼마를 받을까?*/
+function interestCalculator(amount, term, rate) {
+  return amount * term * rate / 100; // 이자 금액을 계산하기 위한 식:맡긴 금액(원) * 맡기는 기간(년) * 이자율(%) / 100
+}
+
+let myMoney = 3650000; // 맡긴 금액 (원)
+let saveTerm = 1; // 맡기는 기간 (년)
+let interestRate = 4; // 이자율 (%)
+
+let myInterest = interestCalculator(myMoney, saveTerm, interestRate);
+let totalMoney = myMoney + myInterest;
+
+console.log('맡긴 금액은 ' + myMoney + '원 입니다.');
+console.log('이자는 ' + myInterest + '원 입니다.');
+console.log('최종 받을 금액은 ' + totalMoney + '원 입니다.');
