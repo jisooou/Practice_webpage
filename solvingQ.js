@@ -71,3 +71,14 @@ teraToGiga(2);
 teraToMega(2);
 
 
+/*자기소개*/
+function introduce(name, birth, nationality, job) {
+  console.log('안녕하세요! 반갑습니다.');
+  console.log('제 이름은 ' + name + '입니다.');
+  console.log('생년월일은 ' + birth + '이고,');
+  console.log('국적은 ' + nationality + '입니다.');
+  console.log('직업은 ' + job + '입니다.');
+  console.log('잘 부탁드립니다!');
+};
+
+introduce('강아지', '20.05.06', '한국', '프로그래머');
