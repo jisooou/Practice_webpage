@@ -40,9 +40,9 @@ printChorus();
 /*파라미터(parameter) 활용 예시*/
 function welcome(name) {
   console.log('안녕하세요 ' + name + '님!');
-};
+}; // 이곳에 붙은 세미콜론은 코드의 결과값에 영향을 주지는 않는다. 
 
-welcome('코딩');
+welcome('코딩'); 
 
 
 /*숫자의 거듭제곱 출력*/
@@ -79,7 +79,7 @@ function introduce(name, birth, nationality, job) {
   console.log('국적은 ' + nationality + '입니다.');
   console.log('직업은 ' + job + '입니다.');
   console.log('잘 부탁드립니다!');
-};
+}
 
 introduce('강아지', '20.05.06', '한국', '프로그래머');
 
