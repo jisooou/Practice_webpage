@@ -109,3 +109,17 @@ let totalMoney = myMoney + myInterest;
 console.log('맡긴 금액은 ' + myMoney + '원 입니다.');
 console.log('이자는 ' + myInterest + '원 입니다.');
 console.log('최종 받을 금액은 ' + totalMoney + '원 입니다.');
+
+
+/**/
+let x = 10;
+let y = 20;
+
+function myFunction(a, b) {
+  return a + b;
+}
+
+let myAnswer = myFunction('x', 'y');
+
+console.log(myAnswer); // 변수 x랑 y는 상관없이 그냥 문자열 'x'와 문자열 'y'를 함수 myFunction에 전달한 결괏값을 출력하는 코드니까 문자열로 xy가 출력된다. 
+// *문자열과 문자열의 더하기 연산 결과는 두 문자를 연결한 문자가 된다.
