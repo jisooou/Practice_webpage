@@ -21,11 +21,12 @@ console.log(message4)
 const age = 30;
 const PI = 3.14;
 
-console.log(1 + 2);
-console.log(10 - 3);
-console.log(3 * 2);
-console.log(6 / 3);
-console.log(6 % 4);
+console.log(1 + 8); //덧셈 
+console.log(6 -7); //뺄셈 
+console.log(2 * 2); //곱셈
+console.log(5 / 2); //나눗셈 
+console.log(7 % 3); //나머지 
+console.log(2 ** 3); //거듭제곱 
 
 /*Boolean*/
 const a = true; //참
