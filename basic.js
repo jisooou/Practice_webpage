@@ -28,6 +28,10 @@ console.log(5 / 2); //나눗셈
 console.log(7 % 3); //나머지 
 console.log(2 ** 3); //거듭제곱 
 
+// 거듭제곱 **은 곱셈 *보다 연산 우선순위가 높다. 
+// ex) console.log((3 + 27) * 12 ** (5 % 3)); 
+// 4320
+
 /*Boolean*/
 const a = true; //참
 const b = false; //거짓
