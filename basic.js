@@ -17,6 +17,9 @@ const message3 = `My name is ${name}`;
 const message4 = `나는 ${30+1}살 입니다.`;
 console.log(message4)
 
+/*문자열*/
+console.log("He said \"I'm Iron man\"."); //따옴표가 포함된 문장 출력하기 
+
 /*숫자형 Number*/
 const age = 30;
 const PI = 3.14;
