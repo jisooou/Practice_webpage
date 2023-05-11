@@ -39,6 +39,13 @@ console.log(2 ** 3); //거듭제곱
 const a = true; //참
 const b = false; //거짓
 
+console.log(2 > 1);
+console.log(2 < 1);
+console.log(3 >= 2);
+console.log(3 <= 3);
+console.log(3 === 3); // 서로 일치한다
+console.log(3 !== 3); // 불일치한다
+
 //null & undefinded 
 //null: 존재하지 않는 값. undefinded: 값이 할당되지 않았다. 
 
