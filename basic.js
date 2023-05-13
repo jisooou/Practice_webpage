@@ -64,7 +64,18 @@ console.log(!!false);
 //null & undefinded 
 //null: 존재하지 않는 값. undefinded: 값이 할당되지 않았다. 
 
+/*typeof 연산자*/
 //typeof 연산자 - "number" "string" "boolean" "object" "undefinded"
+console.log(typeof 101); //number
+console.log(typeof 'Name'); //string
+console.log(typeof true); //boolean
+
+let name = "Lee";
+function sayHello() {
+  console.lof('Hello');
+}
+console.log(typeof name); //string
+console.log(typeof sayHello); //funcion
 
 /*함수 선언*/
 function greetings() {
