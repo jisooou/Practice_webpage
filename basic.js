@@ -77,6 +77,11 @@ function sayHello() {
 console.log(typeof name); //string
 console.log(typeof sayHello); //funcion
 
+console.log(typeof 'Hello' + 'Name'); //stringName
+console.log(typeof 8 - 3); //NaN 
+console.log(typeof ('Hello' + 'Name')); //string
+console.log(typeof (8 - 3)); //number 
+
 /*함수 선언*/
 function greetings() {
     console.log('Hi');
