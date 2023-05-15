@@ -82,6 +82,16 @@ console.log(typeof 8 - 3); //NaN
 console.log(typeof ('Hello' + 'Name')); //string
 console.log(typeof (8 - 3)); //number 
 
+/*형 변환(Type Conversion)*/
+//숫자 -> 문자 
+let x = 123;
+console.log(x); //123
+console.log(String(x)); //123
+console.log(typeof x); //number
+console.log(typeof String(x)); //string
+
+console.log('');
+
 /*함수 선언*/
 function greetings() {
     console.log('Hi');
