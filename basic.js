@@ -92,6 +92,20 @@ console.log(typeof String(x)); //string
 
 console.log('');
 
+//불린 -> 문자 
+let x = true; 
+console.log(x); //true
+console.log(String(x)); //true 
+console.log(typeof x); //boolean
+console.log(typeof String(x)); //string 
+
+//불린 -> 숫자
+let y = false;
+console.log(y); //false
+console.log(Number(y)); //0
+console.log(typeof y); //boolean
+console.log(typeof Number(y)); //number
+
 /*함수 선언*/
 function greetings() {
     console.log('Hi');
