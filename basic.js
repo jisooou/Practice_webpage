@@ -106,6 +106,15 @@ console.log(Number(y)); //0
 console.log(typeof y); //boolean
 console.log(typeof Number(y)); //number
 
+//숫자 -> 불린 
+let k = 123; 
+console.log(k); //123 
+console.log(Boolean(k)); //true
+console.log(typeof k); //number
+console.log(typeof Boolean(k)); //boolean
+
+// '', 0, NaN : false가 나오는 값들, falsy 
+
 /*함수 선언*/
 function greetings() {
     console.log('Hi');
