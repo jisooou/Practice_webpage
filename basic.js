@@ -115,6 +115,8 @@ console.log(typeof Boolean(k)); //boolean
 
 // '', 0, NaN : false가 나오는 값들, falsy 
 
+console.log('4' - true); //3
+
 /*함수 선언*/
 function greetings() {
     console.log('Hi');
