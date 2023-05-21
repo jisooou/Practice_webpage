@@ -115,7 +115,15 @@ console.log(typeof Boolean(k)); //boolean
 
 // '', 0, NaN : false가 나오는 값들, falsy 
 
+//산술 연산(+, -, *, /, %, **)
 console.log('4' - true); //3
+console.log(4 + '2'); //42
+console.log(4 + 2); //6
+console.log(4 - true); //3
+console.log(4 * false); //0
+console.log(4 / '2'); //2
+console.log('4' ** true); //4
+console.log(4 % 'two'); //NaN
 
 /*함수 선언*/
 function greetings() {
