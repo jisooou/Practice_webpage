@@ -1,16 +1,33 @@
 body {
-    background-color: lightskyblue;
+    background-color: blue;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-.container {
+.container1{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    color: black;
+    height: 20vh;
+    color: white;
+    text-align: center;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    color: white;
     text-align: center;
 }
 h1 {
