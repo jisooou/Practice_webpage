@@ -20,6 +20,7 @@ body {
     justify-content: center;
     color: white;
     text-align: center;
+    margin-top: -150px;
 }
 .container3{
     display: flex;
@@ -34,38 +35,43 @@ h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
+
 .button {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 10px 10px 10px 10px;
     background-color: #fff;
-    color: lightskyblue;
+    color: blue;
     text-decoration: none;
     font-size: 18px;
     border-radius: 4px;
+    width: 180px;
+    height: 30px;
+    margin-top: -100px;
 }
+
 .button:hover {
     background-color: #f2f2f2;
     color: blue;
 }
 .box {
-    padding: 20px 200px;
+    padding: 20px 350px;
 }
 .pull {
     position:relative; 
     margin: 50px; 
     padding: 20px; 
-    width:200px; 
+    width:150px; 
     height:60px; 
     color: #FFF; 
     border-radius: 10px; 
-    background-color: orange;
+    background-color: tomato;
 }
 .pull:after {
     content:""; 
     position: absolute; 
     top: 21px; 
     right: -30px; 
-    border-left: 30px solid orange; 
-    border-top: 10px solid transparent; 
+    border-left: 50px solid tomato; 
+    border-top: 40px solid transparent; 
     border-bottom: 10px solid transparent;
 }
