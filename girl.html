@@ -1,121 +1,46 @@
+<!-- 이상형 월드컵 기본 html-->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>이상형월드컵</title>
-	<meta charset="utf-8">
-	<style>
-		img{width: 500px; height: 500px;}
-		img:hover{border: 6px solid tomato;}
-		body{background-color: #1e1a3e; font-family: Arial, sans-serif;}
-		.container1{
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 20vh;
-			color: white;
-			text-align: center;
-			margin-top: -1.69%;
-		}
-		.timer-container {
-			width: 200px;
-			height: 20px;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-			overflow: hidden;
-		}
-		.timer-bar {
-			height: 100%;
-			background-color: #00BFFF;
-			transition: width 0.1s linear;
-		}
-	</style>
+   <title>이상형월드컵</title>
+   <meta charset="utf-8">
+   <style>
+      img{
+         width: 500px;
+         height: 500px;
+      }
+      body{
+         background-color: #1e1a3e;
+         font-family: Arial, sans-serif;
+      }
+      .container1{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         height: 20vh;
+         color: white;
+         text-align: center;
+         margin-top: -1.69%;
+      }
+   #cal {
+      color: white;
+   }
+   </style>
 </head>
 <body>
-	<div class="container1">
+   <div class="container1">
         <h3>WorldCup</h3><br>
     </div>
-	<center>
-	<p id="cal"></p>
-	<img id="image" onclick="change(0)">
-	<img id="images" onclick="change(1)"><br><br>
-	<div class="timer-container">
-		<div id="timer-bar" class="timer-bar"></div>
-	</div>
-	<script>
-		var images = [];
-		var sImages = [];
-		var cnt = 0;
-		var num = 0;
-		var sNum = 0;
-		var cnt2 = 0;
-		var timerDuration = 6000; // 6 seconds in milliseconds
-		var timer;
-
-		function show() {
-			for (var i = 0; i < 16; i++) {
-				images[i] = (i + 1) + ".jpg";
-			}
-			images.sort(function(a, b) { return 0.5 - Math.random() });
-			showImg(num);
-			startTimer();
-		}
-
-		function showImg(num) {
-			document.getElementById('image').src = images[num];
-			document.getElementById('images').src = images[num + 1];
-			cnt2++;
-		}
-
-		function change(n) {
-			if (cnt2 < 20) {
-				cnt++;
-				if (n == 0)
-					sImages[sNum++] = images[num];
-				else
-					sImages[sNum++] = images[num + 1];
-				num += 2;
-				showImg(num);
-				if (cnt == images.length / 2) {
-					for (var i = 0; i < sImages.length; i++) {
-						images[i] = sImages[i];
-						sImages[i] = null;
-					}
-					images.splice(cnt);
-					cnt = 0;
-					num = 0;
-					sNum = 0;
-					showImg(num);
-				}
-				resetTimer();
-			}
-			document.getElementById('cal').innerHTML = text;
-		}
-
-		function startTimer() {
-			var progressBar = document.getElementById('timer-bar');
-			progressBar.style.width = '100%';
-
-			var width = 100;
-			var interval = (timerDuration / 100);
-
-			timer = setInterval(function() {
-				width--;
-				progressBar.style.width = width + '%';
-				if (width <= 0) {
-					clearInterval(timer);
-					change(0);
-				}
-			}, interval);
-		}
-
-		function resetTimer() {
-			clearInterval(timer);
-			startTimer();
-		}
-
-		show();
-	</script>
-</center>
+   <div id="wrap">
+      <center id="context">
+      <p id="cal"></p>
+      <img id="image1" style = "opacity: 1;" >
+      <img id="image2" style = "opacity: 1;" >
+      </center>
+   </div>
+   
+  
+   <script src="func.js"></script>
 </body>
 </html>
