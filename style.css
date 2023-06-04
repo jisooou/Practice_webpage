@@ -36,19 +36,6 @@ h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
-
-/* 텍스트 이동 애니메이션 
-@keyframes moveText {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(-20px); }
-    100% { transform: translateX(0); }
-}
-
-h1 {
-    animation: moveText 2s ease-in-out infinite; 
-}
-*/
-
 .start_button {
     display: inline-block;
     padding: 10px 10px 10px 10px;
