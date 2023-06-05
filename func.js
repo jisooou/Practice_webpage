@@ -81,7 +81,9 @@ function centerImage(img, index, total) {
     img.style.position = "absolute";
     img.style.left = marginLeft + "px";
     img.style.transform = "translateX(-50%)";
+    img.style.margin = "auto"; // Add this line to center the image horizontally
 }
+
 
 
 // 이미지를 이동시키는 도우미 함수
