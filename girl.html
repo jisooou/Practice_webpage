@@ -251,7 +251,6 @@
 	});
 
 	
-
 	var timer;
 	var progressBar;
 	var remainingTime = 6; // 초기 타이머 시간 설정
@@ -260,12 +259,14 @@
 	progressBar.style.width = "100%"; // 막대 초기 설정
 	remainingTime = 6; // 초기 타이머 시간 설정
 	timer = setInterval(function() {
+		if (remainingTime > 0) {
 		remainingTime--; // 남은 시간 1초 감소
 		var progressWidth = (remainingTime / 6) * 100; // 막대의 너비 계산
 		progressBar.style.width = progressWidth + "%";
-		if (remainingTime <= 0) {
+		} else {
 		clearInterval(timer);
 		change(0); // 타이머가 0초가 되면 다음 사진으로 전환
+		restartTimer(); // 타이머 재시작
 		}
 	}, 1000); // 1초마다 타이머 갱신
 	}
@@ -310,6 +311,8 @@
 	});
 
 
+
+	
 	</script>
 	</body>
 	
