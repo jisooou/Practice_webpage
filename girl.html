@@ -26,22 +26,24 @@
 	#cal {
 		color: white;
 	}
+
+
 	.timer-bar {
-	width: 100%;
-	height: 4px;
-	background-color: #ccc;
 	position: fixed;
-	bottom: 0;
+	top: 0;
 	left: 0;
-	transition: width 6s linear;
+	width: 100%;
+	height: 5px;
+	background-color: #000;
 	}
 
 	.timer-progress {
 	height: 100%;
-	background-color: #f00;
+	background-color: #00BFFF;
 	width: 100%;
-	transition: width 6s linear;
+	transition: width 1s linear;
 	}
+
 
 
 	</style>
@@ -253,22 +255,22 @@
 	
 	var timer;
 	var progressBar;
-	var remainingTime = 6; // 초기 타이머 시간 설정
+	var remainingTime = 6; // Initial timer value
 
 	function startTimer() {
-	progressBar.style.width = "100%"; // 막대 초기 설정
-	remainingTime = 6; // 초기 타이머 시간 설정
+	progressBar.style.width = "100%"; // Initialize the progress bar
+	remainingTime = 6; // Set the initial timer value
 	timer = setInterval(function() {
 		if (remainingTime > 0) {
-		remainingTime--; // 남은 시간 1초 감소
-		var progressWidth = (remainingTime / 6) * 100; // 막대의 너비 계산
+		remainingTime--; // Decrease remaining time by 1 second
+		var progressWidth = (remainingTime / 6) * 100; // Calculate the width of the progress bar
 		progressBar.style.width = progressWidth + "%";
 		} else {
 		clearInterval(timer);
-		change(0); // 타이머가 0초가 되면 다음 사진으로 전환
-		restartTimer(); // 타이머 재시작
+		change(0); // Switch to the next picture when the timer reaches 0
+		restartTimer(); // Restart the timer
 		}
-	}, 1000); // 1초마다 타이머 갱신
+	}, 1000); // Update the timer every 1 second
 	}
 
 	function restartTimer() {
@@ -293,7 +295,7 @@
 		centerImage(img1, 0, 2);
 		centerImage(img2, 1, 2);
 		change(0);
-		restartTimer(); // 사진을 클릭하면 타이머 재시작
+		restartTimer(); // Restart the timer when clicking on a picture
 	}, 2000);
 	});
 
@@ -306,11 +308,9 @@
 		centerImage(img1, 0, 2);
 		centerImage(img2, 1, 2);
 		change(1);
-		restartTimer(); // 사진을 클릭하면 타이머 재시작
+		restartTimer(); // Restart the timer when clicking on a picture
 	}, 2000);
 	});
-
-
 
 	
 	</script>
