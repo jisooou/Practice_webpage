@@ -138,16 +138,16 @@
 	}
 
 	function centerImage(img, index, total) {
-		var containerWidth = img.parentElement.offsetWidth;
-		var imageWidth = img.offsetWidth;
-		var offset = 50; // Adjust the offset value as needed
-		var marginLeft = (containerWidth / 2) - ((total * imageWidth) / 2) + (index * imageWidth) + offset;
+	var containerWidth = img.parentElement.offsetWidth;
+	var imageWidth = img.offsetWidth;
+	var marginLeft = (containerWidth - (total * imageWidth)) / 2;
 
-		img.style.position = "absolute";
-		img.style.left = marginLeft + "px";
-		img.style.transform = "translateX(-50%)";
-		img.style.margin = "auto"; // Add this line to center the image horizontally
+	img.style.position = "absolute";
+	img.style.left = (marginLeft + (index * imageWidth)) + "px";
+	img.style.transform = "translateX(0%)";
+	img.style.margin = "auto"; // Add this line to center the image horizontally
 	}
+
 
 	// 이미지를 이동시키는 도우미 함수
 	function slideImageLeft(img) {
