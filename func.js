@@ -90,12 +90,12 @@ function shuffle()
         indices.sort(function(a,b){return 0.5- Math.random()});
 
         // 몇 강?
-        text = gameRound + "강!";
+        text = gameRound + "강";
     } else if (gameRound >= 2){
-        text = "결승!!!";
+        text = "결승 🏁";
     indices.sort(function(a,b){return 0.5- Math.random()});
     } else {
-        text = "최종 우승!!!";
+        text = "최종 우승 🙌🏻";
     }
     for(i=0; i < gameRound; i++) {
         images[i]= indices[i]+".jpg"; // 배열을 넣는다.
