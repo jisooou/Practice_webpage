@@ -51,14 +51,14 @@ h1 {
     background-color: #3f376f;
 }
 .box {
-    padding: 20px 350px;
+    padding: 30px 390px;
 }
 .pull {
     position:relative; 
     margin: 50px; 
     padding: 20px; 
-    width:130px; 
-    height:40px; 
+    width:100px; 
+    height:35px; 
     color: #FFF; 
     border-radius: 10px; 
     background-color: tomato;
