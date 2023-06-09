@@ -15,10 +15,6 @@ document.getElementById("resetButton").addEventListener("click", function() {
     var destination = "gender.html";
     window.location.href = destination;
 });
-document.getElementById("plusButton").addEventListener("click", function() {
-    var destination = "plus.html";
-    window.location.href = destination;
-});
 
 
 function zoomInImg1(event) {
