@@ -55,10 +55,10 @@ h1 {
 }
 .pull {
     position:relative; 
-    margin: 50px; 
+    margin: 60px; 
     padding: 20px; 
     width:100px; 
-    height:35px; 
+    height:33px; 
     color: #FFF; 
     border-radius: 10px; 
     background-color: tomato;
@@ -67,10 +67,10 @@ h1 {
     content:""; 
     position: absolute; 
     top: 21px; 
-    right: -30px; 
-    border-left: 60px solid tomato; 
+    right: -35px; 
+    border-left: 70px solid tomato; 
     border-top: 40px solid transparent; 
-    border-bottom: 10px solid transparent;
+    border-bottom:5px solid transparent;
 }
 .svg-wrapper {
     margin-top: 0;
