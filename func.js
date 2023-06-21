@@ -21,7 +21,6 @@ function zoomInImg1(event) {
     img1.style.height = "600px";
     img1.style.transition = "all 0.5s";
 }
-
 function zoomOutImg1(event) {
     img1.style.width = "500px";
     img1.style.height = "500px";
@@ -33,7 +32,6 @@ function zoomInImg2(event) {
     img2.style.height = "600px";
     img2.style.transition = "all 0.5s";
 }
-
 function zoomOutImg2(event) {
     img2.style.width = "500px";
     img2.style.height = "500px";
